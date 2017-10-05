@@ -4,12 +4,13 @@
 #
 Name     : pydot
 Version  : 1.2.3
-Release  : 4
+Release  : 5
 URL      : http://pypi.debian.net/pydot/pydot-1.2.3.tar.gz
 Source0  : http://pypi.debian.net/pydot/pydot-1.2.3.tar.gz
 Summary  : Python interface to Graphviz's Dot
 Group    : Development/Tools
 License  : MIT
+Requires: pydot-python3
 Requires: pydot-python
 Requires: chardet
 Requires: graphviz
@@ -30,9 +31,19 @@ This module provides with a full interface to
 %package python
 Summary: python components for the pydot package.
 Group: Default
+Requires: pydot-python3
 
 %description python
 python components for the pydot package.
+
+
+%package python3
+Summary: python3 components for the pydot package.
+Group: Default
+Requires: python3-core
+
+%description python3
+python3 components for the pydot package.
 
 
 %prep
@@ -43,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505099570
+export SOURCE_DATE_EPOCH=1507169077
 python3 setup.py build -b py3
 
 %install
@@ -57,5 +68,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
