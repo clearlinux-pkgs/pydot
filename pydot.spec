@@ -4,7 +4,7 @@
 #
 Name     : pydot
 Version  : 1.2.3
-Release  : 6
+Release  : 7
 URL      : http://pypi.debian.net/pydot/pydot-1.2.3.tar.gz
 Source0  : http://pypi.debian.net/pydot/pydot-1.2.3.tar.gz
 Summary  : Python interface to Graphviz's Dot
