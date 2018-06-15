@@ -17,7 +17,7 @@ Requires: pyparsing
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pyparsing
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
