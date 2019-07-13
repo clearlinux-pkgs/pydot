@@ -4,7 +4,7 @@
 #
 Name     : pydot
 Version  : 1.4.1
-Release  : 21
+Release  : 22
 URL      : https://files.pythonhosted.org/packages/5f/e2/23e053ccf5648153959ea15d77fb90adb2b1f9c9360f832f39d6d6c024e2/pydot-1.4.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5f/e2/23e053ccf5648153959ea15d77fb90adb2b1f9c9360f832f39d6d6c024e2/pydot-1.4.1.tar.gz
 Summary  : Python interface to Graphviz's Dot
